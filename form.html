@@ -6,7 +6,7 @@
     <title>Forms</title>
 </head>
 <body>
-    <form action="/action_page.php">
+    <form action="mailto:mashakovalenko28@gmail.com">
         <fieldset>
           <legend>Basic User Information</legend>
           <label for="name">Full Name</label><br>
@@ -57,6 +57,30 @@
             <label for="color">Favorite Color:</label>
             <input id="color" type="color">
         </fieldset>
+        <fieldset>
+            <legend>Additional Details:</legend>
+            <label for="method">How did you hear about us?</label>
+            <input list="methods" name="method" id="method">
+            <datalist id="methods">
+            <option value="Internet">
+            <option value="Friends">
+            <option value="Email">
+            <option value="Adds">
+            </datalist><br>
+            <label for="feedback">Feedback/Comments</label>
+<textarea id="feedback" name="feedback" rows="3" cols="15"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Profile:</legend>
+            <label for="image">Upload a Profile Picture:</label>
+            <input type="file" name="image" id="image"  accept="image/*"><br>
+            <label for="website">Website URL:</label>
+            <input type="url" required id="website" name="website"><br>
+            <label for="range">Experience Level with HTML</label>
+            <input type="range" id="range" name="skale" min="0" max="10" />
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
       </form>  
 </body>
 </html>
