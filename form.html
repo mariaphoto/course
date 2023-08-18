@@ -27,6 +27,36 @@
           <label for="birthday">Date of Birth:</label>
           <input type="date" id="birthday" name="birthday">
         </fieldset>
+        <fieldset>
+            <legend>Adress Information:</legend>
+            <label for="street">Street Adress:</label>
+            <textarea id="street" name="message" rows="3" cols="15"></textarea><br>
+            <label for="country">Country:</label>
+            <input list="countrys" name="country" id="country">
+            <datalist id="countrys">
+            <option value="Greece">
+            <option value="Moldova">
+            <option value="Ucraine">
+            <option value="Romania">
+            <option value="Italy">
+            </datalist><br>
+            <label for="city">City:</label>
+            <input type="text" id="city"><br>
+            <label for="code">Postal Code:</label> 
+            <input type="number" id="code"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences:</legend>
+            <label>Preferred Contact Method:</label>
+            <input type="checkbox" id="post" name="post" value="post">
+            <label for="post">Email</label>
+            <input type="checkbox" id="phone" name="phone" value="phone">
+            <label for="phone">Phone</label>
+            <input type="checkbox" id="postal" name="postal" value="postal">
+            <label for="postal">Postal Mail</label><br>
+            <label for="color">Favorite Color:</label>
+            <input id="color" type="color">
+        </fieldset>
       </form>  
 </body>
 </html>
